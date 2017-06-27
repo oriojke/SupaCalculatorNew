@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\c84a16c2d3634a82a458e5467153a1966ce64e21\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_f19a450ad710de627293dbcc4d7cec8b39999ab5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\8f498a17585ec718bde2d19be728d36d05f0a4bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_fbfa5ea7b7b849f88b75cbe0f7699435cfb41ba8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\7cc4eba87aab75066c9a43faaf8f57afa7569d7c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_519a02694157c95f0a56aef0eb8af1c43f74e49a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\577641b531555c5910f8134ca1ea2a320c7d376d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_4ec5dfb6e554ac2ce1e672a84edb27a5e99a5853.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\SDK\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_d13e142dc4502c53bc418b49e50717fd5f0514c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\83b84f25426ef452baa99d215b2c9afc01b8d605\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_ac2849ce020c4f2c7f1e2f65b38634d6d044e0a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_4a7760d3f5cc8e59a30de3e443acf530a9cbd329.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\b0790db3e788ad93d8242492734450ba925e7723\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_fd1f650d779c94f64e03431682e85b790296c78e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\72609068ce15dc02567e9de9cb9d074a51624dc5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_e989ba305adc2cfbc93f66225becae29d1b4ea1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\879ba936464d90a55f910edef3aa813c8220e321\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_703b3a7ad137102d03019987df767d222cc2dd22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\24d266e112844a660a03607cd462a63701f401ff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_6fb2795fd47ed1e4616f9229ad4a08fdfc70c288.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\orioj\.android\build-cache\09d8dbc8e165387ae0d5ab917857689c8f8bd46f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\orioj\AndroidStudioProjects\SupaCalculator\app\build\intermediates\pre-dexed\debug\classes_5e3eae0112b3094649b491b53f6f0e838d1f24d8.jar" />
+    </item>
+
+</items>
