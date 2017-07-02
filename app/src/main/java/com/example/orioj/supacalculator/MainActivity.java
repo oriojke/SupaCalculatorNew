@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setOperator('X');
                 break;
             case R.id.opPercent:
-                //setOperator('%');
+                percent();
                 break;
             case R.id.opPlus:
                 setOperator('+');
@@ -102,11 +102,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             eqFlag = false;
         }
         if(s == '.' && tv.getText().toString().contains(".")) return;
+        if(s == '.' && tv.getText().length() == 0) tv.append("0");
         tv.append(s.toString());
     }
 
     private void setOperator(Character op)
     {
+        if(!eqFlag) execExpression();
         eqFlag = false;
         TextView tv = (TextView)findViewById(R.id.result);
         firstArg = Float.valueOf(tv.getText().toString());
@@ -159,5 +161,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eqFlag = false;
         TextView tv = (TextView)findViewById(R.id.result);
         tv.setText("");
+    }
+
+    private void percent()
+    {
+        TextView tv = (TextView)findViewById(R.id.result);
+        if(firstArg == null || tv.getText().length() == 0) return;
+        Float newSecondArg = (Float.valueOf(tv.getText().toString()) / 100) * firstArg;
+        tv.setText(newSecondArg.toString());
     }
 }
