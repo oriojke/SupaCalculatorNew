@@ -29,7 +29,6 @@
         android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/constraintLayout"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0">
 
         <Button
@@ -40,7 +39,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/two"
             app:layout_constraintLeft_toRightOf="@+id/num1"
-            app:layout_constraintTop_toBottomOf="@+id/num5" />
+            app:layout_constraintTop_toBottomOf="@+id/num5"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/opPlus"
@@ -50,7 +52,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/plus"
             app:layout_constraintLeft_toRightOf="@+id/num6"
-            app:layout_constraintTop_toBottomOf="@+id/opMinus" />
+            app:layout_constraintTop_toBottomOf="@+id/opMinus"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num0"
@@ -60,7 +65,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/zero"
             app:layout_constraintLeft_toRightOf="@+id/opPercent"
-            app:layout_constraintTop_toBottomOf="@+id/num2" />
+            app:layout_constraintTop_toBottomOf="@+id/num2"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num5"
@@ -70,7 +78,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/five"
             app:layout_constraintLeft_toRightOf="@+id/num4"
-            app:layout_constraintTop_toBottomOf="@+id/num8" />
+            app:layout_constraintTop_toBottomOf="@+id/num8"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num1"
@@ -80,7 +91,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/one"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num4" />
+            app:layout_constraintTop_toBottomOf="@+id/num4"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num6"
@@ -90,7 +104,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/six"
             app:layout_constraintLeft_toRightOf="@+id/num5"
-            app:layout_constraintTop_toBottomOf="@+id/num9" />
+            app:layout_constraintTop_toBottomOf="@+id/num9"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/numDot"
@@ -100,7 +117,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/point"
             app:layout_constraintLeft_toRightOf="@+id/num0"
-            app:layout_constraintTop_toBottomOf="@+id/num3" />
+            app:layout_constraintTop_toBottomOf="@+id/num3"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/opPercent"
@@ -110,7 +130,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/percent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num1" />
+            app:layout_constraintTop_toBottomOf="@+id/num1"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/eq"
@@ -120,7 +143,10 @@
             android:layout_marginTop="-1dp"
             android:text="@string/eq"
             app:layout_constraintLeft_toRightOf="@+id/num3"
-            app:layout_constraintTop_toBottomOf="@+id/opPlus" />
+            app:layout_constraintTop_toBottomOf="@+id/opPlus"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num4"
@@ -130,7 +156,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/four"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num7" />
+            app:layout_constraintTop_toBottomOf="@+id/num7"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/opMinus"
@@ -140,7 +169,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/minus"
             app:layout_constraintLeft_toRightOf="@+id/num9"
-            app:layout_constraintTop_toBottomOf="@+id/opMult" />
+            app:layout_constraintTop_toBottomOf="@+id/opMult"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num3"
@@ -150,7 +182,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/three"
             app:layout_constraintLeft_toRightOf="@+id/num2"
-            app:layout_constraintTop_toBottomOf="@+id/num6" />
+            app:layout_constraintTop_toBottomOf="@+id/num6"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num9"
@@ -160,7 +195,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/nine"
             app:layout_constraintLeft_toRightOf="@+id/num8"
-            app:layout_constraintTop_toBottomOf="@+id/opDiv" />
+            app:layout_constraintTop_toBottomOf="@+id/opDiv"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num8"
@@ -170,7 +208,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/eight"
             app:layout_constraintLeft_toRightOf="@+id/num7"
-            app:layout_constraintTop_toBottomOf="@+id/backspace" />
+            app:layout_constraintTop_toBottomOf="@+id/backspace"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/num7"
@@ -180,7 +221,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/seven"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/clear" />
+            app:layout_constraintTop_toBottomOf="@+id/clear"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/opMult"
@@ -190,7 +234,10 @@
             android:layout_marginTop="-3dp"
             android:text="@string/mult"
             app:layout_constraintLeft_toRightOf="@+id/opDiv"
-            app:layout_constraintTop_toTopOf="@+id/opDiv" />
+            app:layout_constraintTop_toTopOf="@+id/opDiv"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/opDiv"
@@ -200,7 +247,10 @@
             android:layout_marginTop="0dp"
             android:text="@string/divide"
             app:layout_constraintLeft_toRightOf="@+id/backspace"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/backspace"
@@ -210,19 +260,24 @@
             android:layout_marginTop="0dp"
             android:text="@string/backspace"
             app:layout_constraintLeft_toRightOf="@+id/clear"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            android:background="@drawable/buttonshape"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/clear"
-            style="@style/Widget.AppCompat.Button"
+
+            android:text="@string/clear"
+            android:textColor="#000000"
+            android:textSize="20sp"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
-            android:elevation="0dp"
-            android:text="@string/clear"
+            android:background="@drawable/buttonshape"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
