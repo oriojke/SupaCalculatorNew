@@ -15,7 +15,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="right|bottom"
+        android:maxLines="4"
+        android:textSize="40sp"/>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
@@ -139,13 +142,13 @@
             android:id="@+id/eq"
             android:layout_width="88dp"
             android:layout_height="95dp"
-            android:layout_marginLeft="-18dp"
-            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
             android:text="@string/eq"
             app:layout_constraintLeft_toRightOf="@+id/num3"
             app:layout_constraintTop_toBottomOf="@+id/opPlus"
-            android:background="@drawable/buttonshape"
-            android:textColor="#000000"
+            android:background="@drawable/eqbuttonshape"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"/>
 
         <Button

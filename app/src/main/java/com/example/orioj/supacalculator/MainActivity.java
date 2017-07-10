@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Float firstArg, secondArg;
     Character operator;
     boolean eqFlag = false;
+    TextView mResultTextView;
+    String[] strComponents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Button btn = (Button)findViewById(id);
             btn.setOnClickListener(this);
         }
+        
+        mResultTextView = (TextView)findViewById(R.id.result);
     }
 
     @Override
@@ -95,34 +99,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void addNumberSymbol(Character s)
     {
-        TextView tv = (TextView)findViewById(R.id.result);
         if(eqFlag)
         {
             clearExpression();
             eqFlag = false;
         }
-        if(s == '.' && tv.getText().toString().contains(".")) return;
-        if(s == '.' && tv.getText().length() == 0) tv.append("0");
-        tv.append(s.toString());
+        strComponents = mResultTextView.getText().toString().split("\n");
+        if(s == '.' && strComponents[strComponents.length - 1].contains(".")) return;
+        if(s == '.' && strComponents[strComponents.length - 1].length() == 0) mResultTextView.append("0");
+        mResultTextView.append(s.toString());
     }
 
     private void setOperator(Character op)
     {
         if(!eqFlag) execExpression();
         eqFlag = false;
-        TextView tv = (TextView)findViewById(R.id.result);
-        firstArg = Float.valueOf(tv.getText().toString());
+        strComponents = mResultTextView.getText().toString().split("\n");
+        firstArg = Float.valueOf(strComponents[strComponents.length - 1]);
         operator = op;
-        tv.setText("");
+        mResultTextView.setText(strComponents[strComponents.length - 1] + "\n" + op + "\n");
     }
 
     private void execExpression()
     {
-        TextView tv = (TextView)findViewById(R.id.result);
-        if(firstArg == null || tv.getText().length() <= 0) return;
-        secondArg = Float.valueOf(tv.getText().toString());
+        strComponents = mResultTextView.getText().toString().split("\n");
+        if(firstArg == null ||strComponents[strComponents.length - 1].length() <= 0) return;
+        secondArg = Float.valueOf(strComponents[strComponents.length - 1]);
         Float result;
-        //tv.setText(firstArg.toString() + operator + secondArg.toString());
         switch (operator)
         {
             case '+':
@@ -140,17 +143,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 return;
         }
-        tv.setText(result.toString());
+        mResultTextView.append("\n" + result.toString());
         eqFlag = true;
     }
 
     private void backspace()
     {
         if(eqFlag) return;
-        TextView tv = (TextView)findViewById(R.id.result);
-        String val = tv.getText().toString();
-        if(val.length() > 0)
-            tv.setText(val.substring(0, val.length() - 1));
+        String val = mResultTextView.getText().toString();
+        if((val.length() > 0) && (val.lastIndexOf('\n') != (val.length() - 1)))
+            mResultTextView.setText(val.substring(0, val.length() - 1));
     }
 
     private void clearExpression()
@@ -159,15 +161,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         secondArg = null;
         operator = null;
         eqFlag = false;
-        TextView tv = (TextView)findViewById(R.id.result);
-        tv.setText("");
+        mResultTextView.setText("");
     }
 
     private void percent()
     {
-        TextView tv = (TextView)findViewById(R.id.result);
-        if(firstArg == null || tv.getText().length() == 0) return;
-        Float newSecondArg = (Float.valueOf(tv.getText().toString()) / 100) * firstArg;
-        tv.setText(newSecondArg.toString());
+        strComponents = mResultTextView.getText().toString().split("\n");
+        if(firstArg == null || strComponents[strComponents.length - 1].length() == 0) return;
+        Float newSecondArg = (Float.valueOf(strComponents[strComponents.length - 1].toString()) / 100) * firstArg;
+        mResultTextView.setText("");
+        for(int i = 0; i < strComponents.length-1; i++)
+            mResultTextView.append(strComponents[i]+"\n");
+        mResultTextView.append(newSecondArg.toString());
     }
 }
