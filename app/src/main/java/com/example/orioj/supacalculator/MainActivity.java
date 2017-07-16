@@ -114,7 +114,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         if(!eqFlag) execExpression();
         eqFlag = false;
-        strComponents = mResultTextView.getText().toString().split("\n");
+        String resultViewText = mResultTextView.getText().toString();
+        if(resultViewText.isEmpty()) return;
+        strComponents = resultViewText.split("\n");
         firstArg = Float.valueOf(strComponents[strComponents.length - 1]);
         operator = op;
         mResultTextView.setText(strComponents[strComponents.length - 1] + "\n" + op + "\n");
