@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Float firstArg, secondArg;
+    Double firstArg, secondArg;
     Character operator;
     boolean eqFlag = false;
     TextView mResultTextView;
@@ -105,8 +105,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             eqFlag = false;
         }
         strComponents = mResultTextView.getText().toString().split("\n");
-        if(s == '.' && strComponents[strComponents.length - 1].contains(".")) return;
-        if(s == '.' && strComponents[strComponents.length - 1].length() == 0) mResultTextView.append("0");
+        if(strComponents[strComponents.length - 1].length() == 13 ||
+                (s.equals('.') && strComponents[strComponents.length - 1].length() == 12)) return;
+        if(s.equals('.') && strComponents[strComponents.length - 1].contains(".")) return;
+        if(s.equals('.') && strComponents[strComponents.length - 1].length() == 0) mResultTextView.append("0");
         mResultTextView.append(s.toString());
     }
 
@@ -117,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String resultViewText = mResultTextView.getText().toString();
         if(resultViewText.isEmpty()) return;
         strComponents = resultViewText.split("\n");
-        firstArg = Float.valueOf(strComponents[strComponents.length - 1]);
+        firstArg = Double.valueOf(strComponents[strComponents.length - 1]);
         operator = op;
         mResultTextView.setText(strComponents[strComponents.length - 1] + "\n" + op + "\n");
     }
@@ -126,8 +128,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         strComponents = mResultTextView.getText().toString().split("\n");
         if(firstArg == null ||strComponents[strComponents.length - 1].length() <= 0) return;
-        secondArg = Float.valueOf(strComponents[strComponents.length - 1]);
-        Float result;
+        secondArg = Double.valueOf(strComponents[strComponents.length - 1]);
+        Double result;
         switch (operator)
         {
             case '+':
@@ -145,7 +147,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 return;
         }
-        mResultTextView.append("\n" + result.toString());
+        String resString = result.toString();
+        resString = resString.substring(0, Math.min(resString.length(), 13));
+        if(!resString.isEmpty() && resString.endsWith("."))
+            resString = resString.substring(0, Math.min(resString.length(), 12));
+        mResultTextView.append("\n" + resString);
         eqFlag = true;
     }
 
@@ -170,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         strComponents = mResultTextView.getText().toString().split("\n");
         if(firstArg == null || strComponents[strComponents.length - 1].length() == 0) return;
-        Float newSecondArg = (Float.valueOf(strComponents[strComponents.length - 1].toString()) / 100) * firstArg;
+        Double newSecondArg = (Double.valueOf(strComponents[strComponents.length - 1].toString()) / 100) * firstArg;
         mResultTextView.setText("");
         for(int i = 0; i < strComponents.length-1; i++)
             mResultTextView.append(strComponents[i]+"\n");
